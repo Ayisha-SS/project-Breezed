@@ -1,0 +1,1619 @@
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+ul{
+    list-style-type:none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'GT-Eesti';
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+#main {
+    height: 100vh;
+    background-image: url(images/slide-01.jpg);
+    background-position: center;
+    background-size: cover;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+#main header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#main header div.left {
+    display: flex;
+    margin-right: 20px;
+}
+
+header div.left h1 a{
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+}
+
+#main header nav ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#main header nav ul li {
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#main header nav ul li a {
+    color: white;
+}
+#main header nav ul li a:hover{
+    color:rgb(189, 183, 183);
+}
+
+#main header nav button {
+    font-size: 15px;
+    background-color: white;
+    color: cadetblue;
+    border-style: none;
+    background-size: 40px;
+}
+
+#main header nav ul a.button {
+    font-size: 15px;
+    /* width: 30px; */
+    background-color: white;
+    color: cadetblue;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+#main header nav ul li a.active {
+    color: rgb(189, 183, 183);
+}
+
+#main #spotlight {
+    line-height: 1.5;
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 60px ;
+}
+
+#main #spotlight h1 {
+    font-size: 25px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#main #spotlight h2 {
+    font-size: 45px;
+    text-align: center;
+    text-transform:capitalize;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+
+}
+
+#main #spotlight div.button {
+    margin-top: 30px;
+    text-align: center;
+    display: inline-flex;  
+    cursor: pointer; 
+}
+
+#main #spotlight div.button-one button {
+    padding: 15px;
+    width: 170px;
+    border-radius: 30px;
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    margin-right: 30px;
+    cursor: pointer;
+}
+#main #spotlight div.button-two button {
+    padding: 15px;
+    width: 170px;
+    border-radius: 30px;
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+#main #spotlight div.button-two .active {
+    background-color: white;
+    color: cadetblue;
+    cursor: pointer;
+}
+
+#main div.arrow{
+    display:flex;
+    justify-content: space-between;
+    position: absolute;
+    top:50%;
+    width:100%;
+}
+#main div.arrow div.preview{
+    margin-left:20px;
+    cursor: pointer;
+    
+}
+#main div.arrow div.next{
+    margin-right: 20px;
+    cursor: pointer;
+}
+#main div.arrow img {
+    width:30px;
+    
+}
+
+#main div.arrow-down{
+    background-color:limegreen; 
+    position:absolute;
+    margin-bottom: -40px;
+    bottom:0;
+    height:80px;
+    width:80px;
+    right:50%;
+    border-radius: 50%;
+    size: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+#main div.arrow-down a {
+    text-align: center;
+}
+
+#main div.arrow-down a i{
+    color:white;
+    text-align: center; 
+    padding:25px;
+    font-size: 30px;
+}
+
+#about {
+    margin-top: 100px;
+}
+
+#about section.top {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    margin-top: 20px;
+
+}
+
+#about section.top div.left {
+    display: block;
+    width: 70%;
+}
+
+
+#about section.top div.left h1 {
+    font-size: 20px;
+    color:limegreen;
+    margin-bottom: 18px;
+}
+
+#about section.top div.left h2 {
+    font-size: 40px;
+    color: black;
+    letter-spacing: 1px;
+}
+
+#about section.top div.left ul {
+    width:600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+    margin-top: 32px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+#about section.top div.left ul li {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+#about section.top div.left ul li .left-icon{
+    width:20%;
+}
+#about section.top div.left ul li .left-icon img{
+    width:100%;
+    display:block;
+}
+
+#about section.top div.left ul h6 {
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+
+#about section.top div.left a {
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+#about section.top div.left a.button {
+    background-color:limegreen;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 15px 20px;
+}
+
+#about section.top div.right {
+    width: 65%;
+}
+
+#about section.top div.right p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(154, 151, 151);
+    margin-top: 40px;
+    text-align: justify;
+}
+
+#about section.top div.right p a{
+    color: rgb(7, 164, 212)
+}
+
+#about section.top hr.line {
+    border-bottom: 1px dotted #6a6666;
+    margin: 0 25%;
+}
+
+#about section.bottom {
+    padding: 60px;
+    margin-bottom:80px;
+    height:30vh;
+}
+
+#about section.bottom div.content {
+    display: flex;
+    margin-right: 20px;
+}
+
+#about section.bottom ul {
+    display: flex;
+    flex-direction: wrap;
+}
+
+#about section.bottom ul li {
+    margin-right: 60px;
+    display: flex;
+    column-gap: 25px;
+}
+
+#about section.bottom ul li:last-child {
+    margin-right: 0;
+}
+
+#about section.bottom ul li div.left-img{
+    width:40%;
+    height: 30%;
+}
+
+#about section.bottom ul li div.left-img img {
+    width:100%;
+    display: block;
+}
+
+#about section.bottom ul li div.right {
+    display: block;
+    text-align: left;
+}
+
+#about section.bottom div.right h2 {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+}
+
+#about section.bottom ul li div.right p {
+    font-size: 15px;
+    color: rgb(154, 151, 151);
+    line-height: 1.5;
+    margin-bottom: 13px;
+}
+
+#about section.bottom ul li div.right a {
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#about section.bottom ul li div.right a.button {
+    margin-top: 40px;
+    color: black;
+    margin-top: 20px;
+}
+
+#subscribe {
+    background-image: url(images/slide-02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#subscribe section.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    line-height: 2.0;
+}
+
+#subscribe section.content h1 {
+    font-size: 20px;
+    font-weight: weight;
+    font-size: normal;
+    font-style: normal;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#subscribe section.content h2 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#subscribe section.content p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: normal;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+#subscribe section.content div.form{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+}
+#subscribe section.content div.email input {
+    height: 25px;
+    width: 505px;
+    padding: 14px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#subscribe section.content div.email input::placeholder {
+    color: #C0CCDA;
+}
+
+#subscribe section.content div.form-btn{
+    margin-left:30px;
+}
+
+#subscribe section.content div.form-btn button {
+    /* height: 55px; */
+    /* width: 260px; */
+    /* text-align: center; */
+    padding: 15px 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: white;
+    color: limegreen;
+    cursor: pointer;
+}
+
+#project {
+    /* height: 100vh; */
+}
+
+#project section.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+#project section.content div.left {
+    justify-content: left;
+    align-items: left;
+    width: 23%;
+    /* display: inline-block; */
+    
+    
+}
+
+#project section.content div.left h1 {
+    font-size: 20px;
+    color: limegreen;
+}
+
+#project section.content div.left h2 {
+    font-size: 45px;
+    color: black;
+    padding-top: 25px;
+    letter-spacing: 1px;
+}
+
+#project section.content div.left ul {
+    text-decoration: none;
+    padding-top: 70px;
+}
+
+#project section.content div.left ul li {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#project section.content div.left ul li a {
+    text-decoration: none;
+    line-height: 3.0;
+    color: grey;
+}
+
+#project section.content div.left ul li a.active {
+    color: limegreen;
+}
+
+#project section.content div.right {
+    width: 77%;
+    justify-content: end;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 55px;
+}
+
+#project section.content div.right .img_div{
+  width:30%;
+  margin:20px 0 0 20px;
+}
+
+#project section.content div.right .img_div img {
+    width: 100%;
+    display: block;
+}
+
+
+#team {
+    background-image: url(images/slide-03.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 100px;
+}
+
+#team section.content {
+    display: block;
+    text-align: center;
+    padding: 100px 0;
+    line-height: 1.5;
+}
+
+#team section.content h1 {
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#team section.content h2 {
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#team section.content ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 55px;
+    justify-content: space-between;
+}
+
+#team section.content ul li {
+    display:inlin-flex;
+    flex-wrap: wrap;
+    
+    line-height: 1.5;
+    width:32%;
+    height: auto;
+}
+
+#team section.content ul li div.team-img{
+    /* width:50%; */
+    margin-bottom: 20px;
+}
+
+#team section.content ul li img {
+    width: 100%;
+    display: block;
+}
+
+#team section.content ul li h5 {
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#team section.content ul li h6 {
+    font-size: 10px;
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+                          /*------------- contact--------- */
+#contact {
+    background-position: center;
+    background-size: cover;
+}
+
+#contact section.top {
+    display: flex;
+    background-image: url(images/dotted-map-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 70vh; */
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+#contact section.top div.left {
+    width: 40%;
+}
+
+#contact section.top div.left h1 {
+    font-size: 20px;
+    color: limegreen;
+    letter-spacing: 1px;
+}
+
+#contact section.top div.left h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: black;
+    padding-top: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+#contact section.top div.left ul {
+    line-height: 2.5;
+    display: block;
+}
+
+#contact section.top div.left ul li {
+    display: flex;
+    column-gap: 20px;
+    padding-bottom: 26px;
+}
+
+#contact section.top div.left ul li div.icon{
+    width:13%;
+}
+
+#contact section.top div.left ul li div.icon img{
+    width:100%;
+    display: block;
+}
+
+#contact section.top div.left ul li a {
+    text-decoration: none;
+    padding-top: 5px;
+    color:black;
+    letter-spacing:1px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#contact section.top div.right {
+    margin-top: 55px;
+    width:68%;
+}
+
+#contact section.top div.right form {
+    /* width:100%; */
+    /* display:flex; */
+    /* flex-wrap: wrap; 
+    padding: 5px; */
+}
+
+#contact section.top div.right form div.form-ip{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 22px;;
+}
+
+#contact section.top div.right form div.form-ip input {
+    height: 45px;
+    width: 47%;
+    padding: 5px;
+    margin-bottom: 40px;
+    border:1px solid rgb(221, 216, 216);
+
+}
+
+#contact section.top div.right div.fill textarea {
+    width: 97%;
+    margin-bottom: 65px;
+    padding: 10px 10px;
+    height: 140px;
+    border:1px solid rgb(221, 216, 216);
+}
+
+#contact section.top div.right a {
+    text-decoration: none;
+}
+
+#contact section.top div.right a.button {
+    height: 80px;
+    width: 600px;
+    background-color:limegreen;
+    color: white;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 60px;
+}
+
+#contact section.bottom {
+    background-image: url(images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact section.bottom div.left {
+    width:60%;
+}
+
+#contact section.bottom div.left h6 {
+    color: white;
+    font-size: 20px;
+    float: left;
+    font-weight: lighter;
+    font-style: normal;
+    cursor: context-menu;
+}
+
+#contact section.bottom div.right {
+    display: flex;
+    float: right;
+}
+
+#contact section.bottom div.right h5 {
+    font-size: 20px;
+    color: white;
+    font-style: normal;
+    font-weight: lighter;
+    margin-right: 8px;
+    letter-spacing: 1px;
+}
+
+#contact section.bottom div.right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+}
+
+#contact section.bottom div.right ul li{
+    justify-content: space-between;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#contact section.bottom div.right ul li i {
+    width: 20px;
+    color: limegreen;
+    background-color: white;
+    padding: 6px;
+    margin: 6px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+                                /*....... responsive......... */
+@media all and (max-height:1440px){
+    /* #subscribe{
+        height:70vh
+    } */
+    /* #project section.content div.right{
+        height:600px;
+    } */
+    #team section.content ul{
+        
+    }
+}
+
+@media all and (max-width:1280px){
+
+}
+
+@media all and (max-width:980px){
+    #main header nav li li{
+        font-size: 12px;
+        font-weight: lighter;
+    }
+    #main div.arrow-down{
+        height:60px;
+        width:60px;
+    }
+    #main div.arrow-down a i{
+        padding:18px;
+        font-size: 25px;
+    }
+    #about section.top div.left h2{
+        font-size: 35px;
+    }
+    #about section.top div.right p{
+        font-size: 15px;
+    }
+    #about section.top div.left a.button{
+        font-size: 15px;
+        padding:10px 15px;
+    }
+    #about section.button{
+        height:25px
+    }
+    
+    #about section.bottom div.right h2{
+        font-size: 15px;
+    }
+    #about section.bottom ul li div.right p {
+        font-size: 15px;
+    }
+    #about section.bottom ul li div.right a{
+        font-size: 15px;
+    }
+    #subscribe section.content h1{
+        font-size: 15px;
+    }
+    #subscribe section.content h2{
+        font-size: 40px;
+    }
+    #subscribe section.content p{
+        font-size: 15px;
+    }
+    #subscribe section.content div.email input{
+        height:20px;
+        width:450px;
+    }
+    #subscribe section.content div.form-btn button {
+        height: 45px;
+        width: 200px;
+        font-size: 15px;
+    }
+    #project section.content div.left h1 {
+        /* font-size: 15px; */
+    }
+    #project section.content div.left h2 {
+        font-size: 40px;
+    }
+    #project section.content div.left ul {
+        padding-top:50px
+    }
+    #project section.content div.right .img_div{
+        width:28%;
+    }
+    #team section.content h2 {
+        font-size: 40px;
+    }
+    #contact section.top div.left {
+        width:35%;
+    }
+    #contact section.top div.left h1 {
+        /* font-size: 15px; */
+    }
+    #contact section.top div.left h2 {
+        font-size: 40px;
+    }
+    #contact section.top div.right {
+        
+        width:65%;
+    }
+    #contact section.top div.right form div.form-ip input {
+        height: 40px;
+        width: 43%;
+    }
+    #contact section.top div.right div.fill textarea{
+        width:90%;
+        height:135px;
+    }
+    #contact section.top div.right a.button{
+        height:75px;
+        width:500px;
+        padding:10px;
+    }
+    #contact section.bottom div.left{
+        width:50%;
+    }
+    #contact section.bottom div.left h6{
+        font-size: 15px;
+    }
+    #contact section.bottom div.right h5 {
+        font-size: 15px;
+    }
+
+}
+
+@media all and (max-width:768px){
+    /* .wrapper{
+        width:80%;
+    } */
+    #main header div.left h1 a{
+        font-size: 20px;
+    }
+    #main #spotlight h1{
+        font-size: 20px;
+    }
+    #main header nav ul{
+        display: inline-block; 
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    #main header nav ul li{
+        font-size: 10px;
+    }
+    #main header nav ul li{
+        margin-right: 0;
+    }
+    #main header nav ul a.button{
+        padding:4px;
+        font-size: 15px;
+    }
+
+    #main #spotlight h2{
+        font-size:40px;
+    }
+    #main #spotlight div.button button{
+        width:140px;
+    }
+    #about section.top{
+        flex-wrap: wrap;
+    }
+    #about section.top div.left{
+        width:100%;
+    }
+    #about section.top div.left h1{
+        font-size: 15px;
+    }
+    #about section.top div.left h2{
+        font-size: 35px;
+    }
+    #about section.top div.left ul{
+        width:500px;
+    }
+    #about section.top div.left a {
+        margin-top: 0;
+    }
+    #about section.top div.right {
+        width: 100%;
+    }
+    #about section.bottom{
+        height:50vh;
+    }
+    
+    #about section.bottom div.right h2{
+        margin-bottom:20px;
+        font-size: 15px;
+    }
+    #about section.bottom div.right p{
+        margin-bottom:15px;
+        font-size: 14px;
+    }
+    #about section.bottom ul{
+        flex-wrap: wrap;
+        height:20vh;
+    }
+    #about section.bottom ul li{
+        margin-bottom:15px;
+    }
+    #about section.bottom ul li div.left-img{
+        width:10%;
+    }
+    #about section.bottom ul li div.right a {
+        font-size: 15px;
+    }
+    #project section.content div.left h1{
+        font-size:15px;
+    }
+    #project section.content div.left h2{
+        font-size:40px;
+    }
+    #project section.content div.right{
+        height:630px
+    }
+    #project section.content div.right .img_div{
+        width:33%;
+        margin:15px 0 0 15px;
+    }
+    #team{
+        padding: 10px 10px;
+    }
+    #team section.content h1{
+        font-size:15px;
+    }
+    #team section.content h2{
+        font-size: 40px;
+    }
+    #contact section.top div.left{
+        width:40%;
+    }
+    #contact section.top div.right form{
+        /* width:90%; */
+    }
+    #contact section.top div.right form div.form-ip input{
+        width:90%;
+    }
+    #contact section.top div.right form div.form-ip input{
+        margin-bottom: 30px;
+    }
+    #contact section.top div.right div.fill textarea{
+        width:90%;
+        height:100px;
+        margin-bottom: 60px;
+    }
+    #contact section.bottom div.left h6{
+        font-size: 13px;
+        
+    }
+    #contact section.bottom div.right h5{
+        font-size:13px;
+    }
+    #contact section.bottom div.right ul li i{
+        width:15px;
+    }
+}
+
+@media all and (max-width:640px){
+    .wrapper{
+        width:85%;
+    }
+    #main #spotlight h1{
+        font-size:20px ;
+    }
+    #main #spotlight h2{
+        font-size: 35px;
+    }
+    #main #spotlight div.button-one button{
+        width:150px;
+        padding:10px;
+    }
+    #main #spotlight div.button-two button{
+        width:150px;
+        padding:10px;
+    }
+    #main div.arrow img{
+        width:20px;
+    }
+    #main div.arrow-down{
+        margin-bottom: -30px;
+        height:50px;
+        width:50px
+    }
+    #main div.arrow-down a i{
+        padding:17px;
+        font-size: 20px;
+    }
+
+    #about section.top div.right p{
+        font-size: 15px;
+    }
+    
+    #subscribe{
+        height:80vh;
+    }
+    #subscribe section.content div.form{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #subscribe section.content form button{
+        width:150px;
+    }
+    #subscribe section.content div.email input{
+        margin-bottom: 15px;
+        height:20px;
+        width:400px;
+    }
+    #subscribe section.content div.form-btn button{
+        height:40px;
+        width:200px
+    }
+    
+    #project section.content div.left{
+        /* width:35%; */
+        text-align: center;
+    }
+    #project section.content div.left h1{
+        font-size:15px;
+    }
+    #project section.content div.left h2{
+        font-size: 35px;
+    }
+    #project section.content div.right .img_div{
+        width:40%;
+        margin:10px 0 0 10px;
+    }
+    #team section.content{
+        height: 30%;
+ 
+    }
+    #team section.content h1{
+        font-size: 13px;
+    }
+    #team section.content h2{
+        font-size: 32px;
+    }
+    #team section.content ul li{
+        width:40% ;
+        margin: 10px;     
+    }
+    #contact section.top{
+        width:100%;
+        flex-wrap: wrap;
+    }
+    #contact section.top div.left{
+        width:100%
+    }
+    #contact section.top div.left h2{
+        font-size: 30px;
+    }
+    #contact section.bottom div.left h6{
+        font-size: 12px;
+    }
+    #contact section.top div.left ul li div.icon{
+        width:8%;
+    }
+    #contact section.top div.left ul li a{
+        font-size: 15px;
+    }
+    #contact section.top div.right{
+        width:100%;
+        margin-top: 10px;
+    }
+    #contact section.top div.right form div.form-ip input{
+        width:43%;
+    }
+    #contact section.top div.right div.fill textarea{
+        /* width:100%; */
+        margin-bottom: 35px;
+    }
+    #contact section.bottom div.right h5{
+        font-size:12px;
+    }
+    #contact section.top div.right a.button{
+        height:60px;
+        width:200px
+    }
+}
+
+@media all and (max-width:480px){
+    .wrapper{
+        width:80%;
+    }
+    #main header nav ul li{
+        font-size: 8px;
+    }
+    #main header nav ul li a.button{
+        font-size: 8px;
+    }
+    #about section.top div.left ul{
+        width:100%;
+    }
+    #about section.bottom {
+        margin-top:30px;
+    }
+    #about section.bottom ul{
+        width:100%
+    }
+    #about section.bottom ul li div.left-img{
+        width:30%
+    }
+    #about section.bottom div.right h2{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    #about section.bottom div.right p{
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    #about section.bottom ul li div.right a {
+        font-size: 12px;
+    }
+    #subscribe section.content h2{
+        font-size: 30px;
+    }
+    #subscribe section.content p{
+        font-size: 12px;
+        padding:0 10px;
+    }
+    #subscribe section.content div.form{
+        justify-content: center;
+        margin-top: 12px;
+    }
+    #subscribe section.content form button{
+        width:100px;
+    }
+    #subscribe section.content div.email input{
+        margin-bottom: 10px;
+        height:20px;
+        width:300px;
+    }
+    #subscribe section.content div.form-btn button{
+        /* height:30px; */
+        width:140px;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    #project section.content{
+        padding:70px 0;
+    }
+
+    #project section.content div.left ul li {
+        /* font-size: 12px; */
+        text-align: center;
+    }
+
+    #project section.content div.left{
+        width:100%;
+    }
+
+    #project section.content div.left h1{
+
+    }
+
+    #project section.content div.left h2{
+        font-size:30px;
+        padding-top: 15px;
+    }
+
+    #project section.content div.left ul {
+        /* text-decoration: none; */
+        padding-top: 20px;
+    }
+
+    #project section.content div.right{
+        width:100%;
+        margin-top: 20px;
+    }
+
+    #project section.content div.right .img_div{
+        /* width:40% */
+    }
+
+    #team section.content h2{
+        justify-content: left;
+    }
+
+    #team section.content ul{
+    margin-top: 20px;
+    }
+
+    #team section.content ul li{
+        width:100%
+    }
+    #team section.content ul li h5 {
+        font-size: 15px;
+        text-align: justify;
+    }
+    
+    #team section.content ul li div.team-img{
+        width:65%
+
+    }
+
+    #team section.content ul li h6 {
+        font-size: 12px;
+        color: white;
+        /* margin-top: 10px; */
+        text-align: justify;
+    }
+
+    #contact section.top div.right form div.form-ip input{
+        width:90%;
+        height:30px;
+        margin-bottom: 15px;
+    }
+    #contact section.top div.right div.fill textarea{
+        width:90%;
+        height:80px
+    }
+
+    #contact section.top div.right a.button {
+        height:30px;
+        width:250px;
+        padding:10px;
+        font-size: 12px;
+    }
+
+
+    #contact section.bottom div.left{
+        width:100%;
+        
+    }
+    #contact section.bottom div.left h6{
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    #contact section.bottom div.right{
+        width:100%;
+        float: left;
+    }
+    #contact section.bottom div.right h5{
+        font-size: 12px;
+    }
+    #contact section.bottom div.right ul li{
+        padding-top: 8px;
+    }
+    #contact section.bottom div.right ul li i{
+        width:15px;
+        padding:5px;
+        margin: 3px;
+    }
+    
+}
+
+@media all and (max-width:360px){
+    .wrapper{
+        width:75%
+    }
+    #main header nav ul li a.button{
+        font-size: 6px;
+        padding:3px
+    }
+    #main #spotlight h1 {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+    
+    #main #spotlight h2 {
+        font-size: 12px;
+    }
+    #main #spotlight div.button-one button {
+        padding: 8px;
+        width: 120px;
+        margin-right: 20px;
+    }
+    #main #spotlight div.button-two button {
+        padding: 8px;
+        width: 120px;
+    }
+    #main div.arrow img{
+        width:12px
+    }
+    #main div.arrow-down{
+        height:40px;
+        width:40px;
+        margin-bottom:-20px;
+        
+    }
+    #main div.arrow-down a i{
+        padding:12px;
+        font-size: 18px;   
+    }
+
+    #about section.top{
+        margin-bottom: 30px;
+    }
+
+    #about section.top div.left h1 {
+        font-size: 12px;
+    }
+    #about section.top div.left h2 {
+        font-size: 20px;
+    }
+    #about section.top div.left ul li .left-icon{
+        width:15%;
+    }
+    #about section.top div.left ul h6 {
+        margin-top:5px;
+        font-size: 12px;
+    }
+    #about section.top div.right p {
+        font-size: 12px;
+        margin-top: 40px;
+        text-align: justify;
+    }
+    #about section.bottom ul li div.left-img{
+        width:20%;
+    }
+    
+    #about section.bottom div.right h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    #about section.bottom ul li div.right p {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    #about section.bottom ul li div.right a { 
+        font-size: 12px;
+    }
+    
+    #about section.bottom ul li div.right a.button {
+        margin-top: 10px;
+    }
+    #subscribe section.content h1 {
+        font-size: 12px;  
+        margin-bottom: 12px;
+    }
+    
+    #subscribe section.content h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    #subscribe section.content p {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    #project section.content{
+        padding:50px 0;
+    }
+
+    #project section.content div.left h1 {
+        font-size: 12px;
+    }
+    
+    #project section.content div.left h2 {
+        font-size: 18px;
+        
+        padding-top: 12px;
+        
+    }
+    #project section.content div.left ul {
+        padding-top: 10px;
+    }
+    
+    #project section.content div.left ul li {
+        font-size: 12px;
+    }
+    #project section.content div.right .img_div{
+        width:46%;
+        margin:10px 0 0 10px;
+    }
+    #team section.content h1 {
+        font-size: 12px;
+    }
+    
+    #team section.content h2 {
+        font-size: 18px;
+        
+    }
+    #team section.content ul li div.team-img{
+        width:90%;
+        margin-bottom: 20px;
+    }
+
+    #team section.content ul li h5 {
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    #team section.content ul li h6 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #contact section.top{
+        padding: 60px 0;
+    }
+
+    #contact section.top div.left  h1{
+        font-size: 12px;
+    }
+    #contact section.top div.left h2{
+        font-size: 18px;
+    }
+
+    #contact section.top div.left ul {
+        line-height: 2;
+    }
+    
+    #contact section.top div.left ul li{
+        column-gap: 10px;
+    }
+
+    #contact section.top div.left ul li div.icon{
+        width:10%;
+    }
+    
+
+    #contact section.top div.left ul li a {
+        font-size: 12px;
+        padding-top: 2px;
+    }
+
+    #contact section.top div.right form div.form-ip input{
+        width:80%;
+        height:20px;
+        margin-bottom: 15px;
+    }
+    #contact section.top div.right div.fill textarea{
+        width:80%;
+        height:60px;
+        margin-bottom: 15px;
+    }
+
+
+    #contact section.top div.right a.button {
+        height: 70px;
+        width: 100px;
+        background-color:limegreen;
+        color: white;
+        border-radius: 25px;
+        padding: 10;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    #contact section.bottom div.right h5 {
+        font-size: 12px;
+    }
+    #contact section.bottom div.right ul li i {
+        width: 12px;
+        padding: 5px;
+    
+    }
+
+}
+
+@media all and (max-width:320px){
+    .wrapper{
+        /* width:70% */
+    }
+
+    #about section.top div.left ul{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        margin-top: 15px;
+    }
+
+    #about section.top div.left ul li{
+        padding-bottom: 0;
+    }
+
+    #about section.bottom{
+        padding:0;
+        /* height:40vh; */
+        margin-bottom:150px ;
+    } 
+
+
+
+    #about section.bottom div.right h2{
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    #about section.bottom ul li div.right p {
+        font-size: 12px;
+    }
+    #about section.bottom ul li div.right a.button {
+        font-size: 12px;
+    }
+    #subscribe section.content h2 {
+        font-size: 15px;
+        
+    }
+    
+    #subscribe section.content p {
+        font-size: 10px;
+        padding: 10px;
+    }
+    #subscribe section.content form button{
+        width:100px;
+    }
+    #subscribe section.content div.email input{
+        margin-bottom: 10px;
+        height:10px;
+        width:250px;
+    }
+
+    #subscribe section.content div.form-btn{
+        margin-left:0;
+    }
+
+    #subscribe section.content div.form-btn button{
+        /* height:10px; */
+        /* width:150px; */
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    #project section.content div.right .img_div{
+        width:45%;
+        margin:10px 0 0 10px;
+    }
+
+    #team section.content h1 {
+        font-size: 12px;
+        
+    }
+    
+    #team section.content h2 {
+        font-size: 15px;
+        
+    }
+    #team section.content ul li div.team-img{
+        width:80%
+    }
+
+}
